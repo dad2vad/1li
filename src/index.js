@@ -21,7 +21,6 @@ async function fakeCheckValidName(name, instance) {
   if (!name) {
     return "A name is required";
   }
-
   return instance.debounce(async () => {
     console.log("checking name");
     await new Promise(resolve => setTimeout(resolve, 1000));
