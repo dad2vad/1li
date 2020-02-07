@@ -82,6 +82,17 @@ function MyForm() {
           <InputField field="address.street" validate={validateAddressStreet} />
         </label>
       </div>
+          <div>
+        <label>
+          Url: <InputField field="url" validate={fakeCheckValidName} />
+        </label>
+      </div>
+      <div>
+        <label>
+          Pic:{" "}
+          <InputField field="pic" validate={validateAddressStreet} />
+        </label>
+      </div>
 
       <div>
         <button type="submit" disabled={!canSubmit}>
